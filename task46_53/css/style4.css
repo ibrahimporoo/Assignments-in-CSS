@@ -1,0 +1,37 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.parent {
+	width: 600px;
+	height: 300px;
+	background-color: #EEE;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 40px auto;
+}
+.parent div {
+	background-color: #009688;
+	padding: 15px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.parent .one {
+	width: fit-content;
+	align-self: flex-end;
+}
+.parent .two {
+	width: 50%;
+}
+.parent .three {
+	width: fit-content;
+	align-self: flex-end;
+}
