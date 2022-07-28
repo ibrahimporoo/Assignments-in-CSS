@@ -1,0 +1,84 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.grid {
+	background-color: #DDD;
+	display: grid;
+	grid-template-areas: 
+	"os os ah sh"
+	"mo ma ma sh"
+	"mo ez ez sh"
+	"ms is gs es"
+	;
+	gap: 10px;
+	padding: 20px;
+}
+.grid div {
+	padding: 15px;
+	background-color: white;
+	box-shadow: 0 0 10px 0 #CCC;
+	border-bottom: 4px solid red;
+	border-radius: 5px;
+}
+.grid div .name {
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+.grid div .title {
+	opacity: .5;
+	margin-bottom: 15px;
+	font-size: 12px;
+}
+.grid div .top {
+	margin-bottom: 15px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+.grid div .bottom {
+	line-height: 1.5;
+	font-weight: 500;
+}
+.grid .one {
+	grid-area: os;
+}
+.grid .two {
+	grid-area: ah;
+}
+.grid .three {
+	background-color: #333;
+	color: white;
+	grid-area: sh;
+}
+.grid .four {
+	grid-area: mo;
+}
+.grid .five {
+	background-color: #333;
+	color: white;
+	grid-area: ma;
+	
+}
+.grid .six {
+	grid-area: ez;
+}
+.grid .seven {
+	grid-area: ms;
+}
+.grid .eight {
+	grid-area: is;
+	background-color: #333;
+	color: white;
+}
+.grid .nine {
+	grid-area: gs;
+}
+.grid .ten {
+	grid-area: es;
+}

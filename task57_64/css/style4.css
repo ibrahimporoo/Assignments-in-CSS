@@ -1,0 +1,70 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+/* 
+#03a9f4
+#ff5722
+#607d8b
+#009688
+*/
+.grid {
+	background-color: #ddd;
+	padding: 20px;
+	width: 800px;
+	height: 400px;
+	margin: 20px auto;
+	display: grid;
+	grid-template-areas: 
+	"ei ei ei ei ei ei ei ei"
+	"tw tw tw tw tw thr thr thr"
+	"fo fo fo fi fi fi fi fi"
+	"si si si fi fi fi fi fi"
+	"se se se fi fi fi fi fi"
+	"one one one one one one one one";
+	gap: 10px;
+}
+.grid div {
+	background-color: #2196f3;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+}
+.grid .one {
+	grid-area: one;
+}
+.grid .two {
+	grid-area: tw;
+	
+}
+.grid .three {
+	grid-area: thr;
+	
+}
+.grid .four {
+	grid-area: fo;
+	
+}
+.grid .five {
+	grid-area: fi;
+	
+}
+.grid .six {
+	grid-area: si;
+	
+}
+.grid .seven {
+	grid-area: se;
+	
+}
+.grid .eight {
+	grid-area: ei;
+}
