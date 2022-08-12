@@ -1,0 +1,57 @@
+:root {
+	--main-color: #ff5722;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+div {
+	padding: 30px;
+	font-size: 22px;
+	background-color: #EEE;
+	margin: 40px auto;
+	max-width: 600px;
+	position: relative;
+}
+.arrow::before {
+	content: "";
+	border-width: 20px;
+	border-style: solid;
+	position: absolute;
+	transition: 1s;
+	opacity: 0;
+}
+.arrow.top::before {
+	border-color: transparent transparent #EEE;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+}
+.arrow.bottom::before {
+	border-color: #EEE transparent transparent;
+	bottom: -40px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 1;
+}
+.arrow.left::before {
+	border-color: transparent #EEE transparent transparent;
+	top: 50%;
+	left: -40px;
+	transform: translateY(-50%);
+	opacity: 1;
+}
+.arrow.right::before {
+	border-color: transparent transparent transparent #EEE;
+	top: 50%;
+	right: -40px;
+	transform: translateY(-50%);
+	opacity: 1;
+}

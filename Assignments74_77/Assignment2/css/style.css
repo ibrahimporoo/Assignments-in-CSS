@@ -1,0 +1,62 @@
+:root {
+	--main-color: #ff5722;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+div {
+	width: 50px;
+	height: 50px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: #e12355 #e12355 transparent #e12355;
+	border-radius: 50%;
+	position: relative;
+}
+div::before ,
+div::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-width: 8px;
+	border-style: solid;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+div::before {
+	width: 70px;
+	height: 70px;
+	border-color: #1e91c8 #1e91c8 transparent #1e91c8;
+}
+div::after {
+	width: 90px;
+	height: 90px;
+	border-color: #000 #000 transparent #000;
+}
+div:hover {
+	animation: move 1s linear infinite;
+}
+div:hover::before,
+div:hover::after {
+	animation-duration: 1.2s;
+}
+@keyframes move {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(1turn);
+	}
+}
