@@ -37,7 +37,7 @@ body {
 	width: 250px;
 	height: 70px;
 	background-color: black;
-	left: -65px;
+	left: -70px;
 }
 .shapes .e::before {
 	top: -70px;
@@ -58,12 +58,12 @@ body {
 .shapes .e .square {
 	width: 40px;
 	height: 40px;
-	background-color: yellow;
+	background-color: #fea604;
 	position: absolute;
 	z-index: 10;
 	top: -55px;
 	left: 130px;
-	animation: move-square1 4s 3s linear alternate;
+	animation: move-square1 4s 2 3s linear alternate;
 }
 @keyframes move-square1 {
 	0% {
@@ -117,7 +117,7 @@ body {
 .shapes .el .square {
 	width: 40px;
 	height: 40px;
-	background-color: yellow;
+	background-color: #fea604;
 	position: absolute;
 	z-index: 10;
 	top: 10px;
@@ -127,7 +127,7 @@ body {
 @keyframes move-square2 {
 	0% {
 		top: 445px;
-		left: 220px;
+    	left: 215px;
 	}
 	30% {
 		top: 445px;
